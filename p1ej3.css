@@ -16,12 +16,19 @@
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    background: url(http://gen4congress.com/wp-content/uploads/2017/08/awesome-and-beautiful-white-marble-background-2-minimalist-white-marble-background-with-ideas-inspiration-46042.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
   }
   .links{
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     text-align: right;
+    background: url(http://gen4congress.com/wp-content/uploads/2017/08/awesome-and-beautiful-white-marble-background-2-minimalist-white-marble-background-with-ideas-inspiration-46042.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .pi-title{
     border-top: 1px solid black;
@@ -42,17 +49,26 @@
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    background: url(http://gen4congress.com/wp-content/uploads/2017/08/awesome-and-beautiful-white-marble-background-2-minimalist-white-marble-background-with-ideas-inspiration-46042.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .socialmedia{
       border-top: 1px solid black;
       border-right: 1px solid black;
       border-bottom: 1px solid black;
+      background: url(http://gen4congress.com/wp-content/uploads/2017/08/awesome-and-beautiful-white-marble-background-2-minimalist-white-marble-background-with-ideas-inspiration-46042.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
   }
   .quad{
     float: right;
   }
   .rect{
     float: right;
+  }
+  body{
+    color: #4F4763;
   }
 }
 
