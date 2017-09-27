@@ -1,20 +1,66 @@
+@media screen and (min-width: 769px){
+  .site{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-row-gap: 2em;
+    grid-template-areas:
+        "header header links"
+        "pi-title pers-info1 pers-info2"
+        "bi-title bill-info bill-info"
+        "footer footer socialmedia";
+  }
 
-.site{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 2fr 3fr 3fr 1fr;
-  grid-template-areas:
-      "header . links"
-      "pi-title pers-info1 pers-info2"
-      "bi-title bill-info bill-info"
-      "footer footer footer";
-
+  /* Borders and horizontal lines */
+  .header{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .links{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: right;
+  }
+  .pi-title{
+    border-top: 1px solid black;
+  }
+  .pers-info1{
+    border-top: 1px solid black;
+  }
+  .pers-info2{
+    border-top: 1px solid black;
+  }
+  .bi-title{
+    border-top: 1px solid black;
+  }
+  .bill-info{
+    border-top: 1px solid black;
+  }
+  .footertext{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .socialmedia{
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+  }
+  .quad{
+    float: right;
+  }
+  .rect{
+    float: right;
+  }
 }
 
 @media screen and (max-width: 768px){ /*tablet*/
   .site{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr) 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 4em 4em 1fr 1fr 4em 2fr 1fr;
+    grid-row-gap: 0px;
     grid-template-areas:
       "header header"
       "links links"
@@ -23,15 +69,32 @@
       "pers-info1 pers-info2"
       "bi-title bi-title"
       "bill-info bill-info"
-      "bill-info bill-info"
-      "footer footer";
+      "footer socialmedia";
   }
+  /* Borders and horizontal lines */
+  .pi-title{
+    border-top: 1px solid black;
+  }
+  .bi-title{
+    border-top: 1px solid black;
+  }
+  .footertext{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .socialmedia{
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+  }
+
 }
 
 @media screen and (max-width: 600px){ /*mobile*/
   .site{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr) 2fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 4em 4em 1fr 1fr 4em 2fr 2em 1fr;
     grid-template-areas:
       "header"
       "links"
@@ -41,21 +104,63 @@
       "bi-title"
       "bill-info"
       "footer"
+      "socialmedia"
+  }
+  /* Borders and horizontal lines */
+  .links{
+    border-bottom: 1px solid black;
+  }
+  .pers-info2{
+    border-bottom: 1px solid black;
+  }
+  .footertext{
+    border-top: 1px solid black;
+  }
+  .socialmedia{
+      border-bottom: 1px solid black;
+  }
+  .quad{
+    float: center;
+  }
+  .rect{
+    float: center;
   }
 }
 
-
-/* Style for header */
+/* General style elements, in order as they are shown on website */
 .header{
   grid-area: header;
+}
+
+.icon i{
+  font-size: 60px;
+}
+.icon{
+  display: inline-grid;
+}
+.header-text{
+  display: inline-grid;
+  vertical-align: top;
 }
 
 .links{
   grid-area: links;
 }
+.links p{
+  vertical-align: middle;
+}
 
 .pi-title{
   grid-area: pi-title;
+}
+
+input{
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+select{
+  margin-bottom: 1em;
 }
 
 .pers-info1{
@@ -74,10 +179,24 @@
   grid-area: bill-info;
 }
 
-.footer{
+.footertext{
   grid-area: footer;
 }
 
-.md-48{
-  font-size: 50px;
+.socialmedia{
+  grid-area: socialmedia;
+}
+
+.quad{
+  border-radius: 1%;
+  height: 50px;
+  padding:2%;
+  display: inherit;
+}
+
+.rect{
+  height: 50px;
+  width:70px;
+  padding:2%;
+  display: inherit;
 }
