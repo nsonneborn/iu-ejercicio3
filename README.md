@@ -13,4 +13,4 @@ Practice responsive web design by adjusting exercise 1 to display on tablets and
 + Ejercicio 1 --> modified version of this?
 
 ## Notes:
-to see my changes, look at Diff on GitHub. Note that I've put images as fixed size. 
+to see my changes, look at Diff on GitHub. (click on the file (p1ej3.css or .html) --> History --> hallelujah). Note that I've put images as fixed size. 
